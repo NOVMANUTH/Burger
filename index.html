@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!--~~~~~~~~~~~~~~~ Font Awesome ~~~~~~~~~~~~~~~-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--  Swiper's CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+    <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <title>Fast-Food</title>
+  </head>
+  <body>
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header class="bg-primaryColor  fixed top-0 left-0 w-full z-50" id="header">
+      <nav class="container relative h-14 flex justify-between items-center">
+        <div>
+          <a href="#" class="text-2xl uppercase  font-oswald">
+            Bur<span class="text-secondaryColor">ger</span>
+          </a>
+        </div>
+
+        <div class="hidden absolute top-0 left-0 w-full py-14 border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto" id="nav-menu">
+          <ul class="flex flex-col text-center gap-5 md:flex-row">
+            <li>
+              <a href="#home" class="nav__link text-secondaryColor hover:text-secondaryColor ease-in duration-200">Home</a>
+            </li>
+            <li>
+              <a href="about_us.html" class="nav__link hover:text-secondaryColor ease-in duration-200">About Us</a>
+            </li>
+            <li>
+              <a href="menu.html" class="nav__link hover:text-secondaryColor ease-in duration-200">Menu</a>
+            </li>
+            <li>
+              <a href="review.html" class="nav__link hover:text-secondaryColor ease-in duration-200">Review</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav__link hover:text-secondaryColor ease-in duration-200">Contact</a>
+            </li>
+          </ul>
+
+          <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <div class="md:hidden" id="hamburger">
+            <i class="ri-menu-2-line cursor-pointer text-xl"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+      <section id="home">
+        <div class="container flex flex-col items-center gap-10 md:flex-row">
+          <div class="mx-auto md:basis-1/2 lg:basis-2/5 animate-movingY">
+            <img src="./img/logo-removebg-preview.png" class="home__image w-100 md:w-full">
+          </div>
+
+          <div class="home__content text-center md:basis-1/2 md:text-start lg:basis-3/5">
+            <h1 class="home__title">HAPPY TUMMY WITH TASTY BURGERS.</h1>
+            <div class="separator mx-auto md:mx-0"></div>
+            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,libero magni? Fugiat perspiciatis eius, sequi aliquid ullam dolorem temporibus voluptate corrupti fugit saepe sunt unde culpa? Tenetur quos quod laudantium.</p>
+            <div class="text-base flex items-center justify-center gap-4 py-10 md:justify-start md:gap-20">
+              <div class="text-center">
+                <i class="fa-solid fa-utensils text-secondaryColor text-4xl"></i>
+                <br />
+                Delicious
+              </div>
+
+              <div class="text-center">
+                <i class="fa-solid fa-droplet text-secondaryColor text-4xl"></i>
+                <br />
+                Fresh
+              </div> 
+
+              <div class="text-center">
+                <i class="fa-brands fa-envira text-secondaryColor text-4xl"></i>
+                <br />
+                Organic
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-primary">learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <!--~~~~~~~~~~~~~~~ Category ~~~~~~~~~~~~~~~-->
+      <section id="category">
+        <div class="container flex flex-col gap-5 md:flex-row">
+          <!-- card 1 -->
+          <div class="category__card bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+            <div class="basis-1/3 relative">
+              <img src="img/burger-1.png" alt="category image" class="absolute w-25 hover:animate-movingY">
+            </div>
+
+            <div>
+              <div class="mb-2">
+                <h4 class="card__title">Food</h4>
+                <p class="text-xs">Lorem ipsum dolor sit.</p>
+              </div>
+
+              <a href="#" class="text-blackColor cursor-pointer">Buy online</a>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="category__card bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+            <div class="basis-1/3 relative">
+              <img src="img/snack-1.png" alt="category image" class="absolute w-25 -bottom-4 -left-5 hover:animate-movingY">
+            </div>
+
+            <div>
+              <div class="mb-2">
+                <h4 class="card__title">Food</h4>
+                <p class="text-xs">Lorem ipsum dolor sit.</p>
+              </div>
+
+              <a href="#" class="text-secondaryColor cursor-pointer">Buy online</a>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="category__card bg-greenColor flex py-6 rounded-lg overflow-hidden md:flex-1">
+            <div class="basis-1/3 relative">
+              <img src="img/beverage-2.png" alt="category image" class="absolute w-25 hover:animate-movingY">
+            </div>
+
+            <div>
+              <div class="mb-2">
+                <h4 class="card__title">Food</h4>
+                <p class="text-xs">Lorem ipsum dolor sit.</p>
+              </div>
+
+              <a href="#" class="text-secondaryColor cursor-pointer">Buy online</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--~~~~~~~~~~~~~~~ Promo ~~~~~~~~~~~~~~~-->
+      <section id="promo">
+        <div class="container flex flex-col gap-5 lg:gap-10 lg:flex-row">
+          <!-- card 1 -->
+          <div class="promo__card-1 bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
+            <img src="img/promo-1.png" alt="promo image" class="w-40 mx-auto hover:animate-movingY md:mx-5">
+
+            <div class="space-y-2 pt-5 md:pt-0">
+              <p class="text-xs text-secondaryColor">Payday promo</p>
+              <h3 class="card__title">GET A 10% DISCOUNT ON PAYDAY WEEK</h3>
+              <p class="paragraph">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+              <a href="#" class="text-xs text-secondaryColor">Buy online</a>  
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="promo__card-2 bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
+            <img src="img/promo-2.png" alt="promo image" class="w-40 mx-auto hover:animate-movingY md:mx-5">
+
+            <div class="space-y-2 pt-5 md:pt-0">
+              <p class="text-xs text-secondaryColor">Payday promo</p>
+              <h3 class="card__title">GET A 10% DISCOUNT ON PAYDAY WEEK</h3>
+              <p class="paragraph">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+              <a href="#" class="text-xs text-secondaryColor">Buy online</a>  
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+    </main>
+    <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+    <footer>
+      <section class="footer">
+        <div class="container">
+          <ul class="grid grid-cols-1 items-start gap-5 pb-5 md:grid-cols-2 lg:grid-cols-4">
+            <li>
+              <div class="space-y-3">
+                <a href="" class="text-4xl font-oswald uppercase">
+                  Bur<span class="text-secondaryColor">ger</span>
+                </a>
+
+                <p class="text-xs">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="flex flex-col gap-3">
+                <h3 class="text-lg uppercase font-oswald">SUPPORT</h3>
+                <a href="" class="text-xs hover:text-secondaryColor">FAQ's</a>
+                <a href="" class="text-xs hover:text-secondaryColor">Privacy Policy</a>
+                <a href="" class="text-xs hover:text-secondaryColor">Term & Condition</a>
+                <a href="" class="text-xs hover:text-secondaryColor">Contact</a>
+              </div>
+            </li>
+
+            <li class="space-y-8">
+              <div class="space-y-2">
+                <h3 class="text-lg uppercase font-oswald">phone</h3>
+
+                <p class="flex items-center gap-2 text-xs">
+                  <i class="fa-solid fa-phone text-lg text-secondaryColor"></i>
+                  088 3775 389
+                </p>
+              </div>
+
+              <div class="space-y-2">
+                <h3 class="text-lg uppercase font-oswald">email</h3>
+
+                <p class="flex items-center gap-2 text-xs">
+                  <i class="fa-solid fa-envelope text-lg text-secondaryColor"></i>
+                  burger.info@email.com
+                </p>
+              </div>
+            </li>
+
+            <li class="space-y-8">
+              <div class="space-y-2">
+                <h3 class="text-lg uppercase font-oswald">address</h3>
+
+                <p class="flex items-center gap-2 text-xs">
+                  <i class="fa-solid fa-location-dot text-lg text-secondaryColor"></i>
+                  Battambang Province
+                </p>
+              </div>
+
+              <div class="space-y-2">
+                <h3 class="text-lg uppercase font-oswald">follow us</h3>
+
+                <div class="space-x-3">
+                  <i class="fa-brands fa-facebook-f text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                  <i class="fa-brands fa-twitter text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                  <i class="fa-brands fa-square-instagram text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
